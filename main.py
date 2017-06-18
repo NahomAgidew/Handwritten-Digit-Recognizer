@@ -2,6 +2,12 @@
 
 Author: Nahom Abi
 """
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import classification_report
+from sklearn import datasets
+from nolearn.dbn import DBN
+import numpy as np
+import cv2
 
 print("[X] downloading data...")
 dataset = datasets.fetch_mldata("MNIST Original")
